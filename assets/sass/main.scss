@@ -1,0 +1,11 @@
+// Importa variables globales como colores y tipografías.
+@import 'abstracts/variables';
+
+// Importa el reset para eliminar estilos predeterminados y los estilos de tipografía globales.
+@import 'base/reset', 'base/typography';
+
+// Importa estilos para el navbar, hero y sección about.
+@import 'layout/navbar', 'layout/hero', 'layout/about';
+
+// Importa estilos para enlaces y botones.
+@import 'components/link', 'components/button';

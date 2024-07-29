@@ -1,0 +1,62 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    height: 45vh;
+    font-family: $roboto;
+
+    &__content {
+        flex: 1;
+        height: 100%;
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title {
+        font-family: $mono;
+        width: 80%;
+        margin: 0 auto;
+    }
+    &__description {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__map {
+        flex: 1;
+        max-height: 280px; 
+        min-width: 200px;
+        background-color: $blue-de-france;
+        position: relative;
+        &-image {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+            top: 12%;
+            right: 18%;
+        }
+        
+        
+    }
+
+    &__coffee {
+        width: 120px;
+        aspect-ratio: 1/2;
+        object-fit: cover;
+        object-position: 0;
+        position: absolute;
+        left: -9%;
+    }
+
+    &__image {
+        background-image: url("../img/img-2.png");
+        flex: 1;
+        min-width: 50px;
+        min-height: 50px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+    }
+}

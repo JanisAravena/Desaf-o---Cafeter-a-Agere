@@ -1,0 +1,25 @@
+.navbar {
+  font-family: $mono;
+  padding: 1% 4%;
+  min-width: 400px;
+
+  &::after {      content: "";
+      clear: both;
+      display: table;
+  }
+
+  &__menu {
+      float: left;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: $sp4;
+  }
+  &__logo {
+      width: 3rem;
+      margin-right: 2rem;
+  }
+  &__actions {
+      float: right;
+  }
+}

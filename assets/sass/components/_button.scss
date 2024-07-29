@@ -1,0 +1,27 @@
+.btn {
+  font-family: $mono;
+  width: $sp9;
+  height: 30px;
+  border-radius: 0;
+  margin-top: 20px;
+
+  &--primary-outline {
+      background-color: $white;
+      border: 1px solid $quick-silver;
+      color: $quick-silver;
+      &:hover {
+          border-color: $black;
+          color: $black;
+      }
+  }
+  &--success {
+      background-color: $shiny-shamrock;
+      border: 1px solid $shiny-shamrock;
+      color: $white;
+      &:hover {
+          background-color: $turqoise-green;
+          border-color: $turqoise-green;
+          color: $white;
+      }
+  }
+}

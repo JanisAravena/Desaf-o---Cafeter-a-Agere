@@ -1,0 +1,89 @@
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    &__image {
+        position: relative;
+        background-image: url("../img/img-1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        flex: 3;
+        min-width: 400px;
+        height: 50vh;
+    }
+    &__facts{
+        position: absolute;
+        display: flex;
+        background-color: $white;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: $sp3 $sp4;
+        bottom: 0;
+        right: 0;
+    }
+    &__fact {
+        
+        overflow-wrap:break-word;
+        font-family: $roboto;
+    }
+    &__data-title{
+        font-family: $mono;
+        font-size: $xxl;
+        font-weight: $medium;
+    }
+    &__data-description{
+        color: $quick-silver;
+    }
+
+    &__header {
+        position: relative;
+        flex: 1;
+
+        min-width: 400px;         
+        height: 50vh;
+    }
+    &__title {
+        font-family: $mono;
+        font-size: $xxxl;
+        font-weight: $thin;
+        color: $black;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+    }
+    &__subtitle {
+        font-family: $roboto;
+        font-size: $lg;
+        color: $quick-silver;
+        font-weight: $medium;
+        position: absolute;
+        top: 55%;
+        left: 25%;
+    }
+    &__square{
+        width:$sp8;
+        height:$sp8;
+
+        &--orange{
+            background-color: $flame;
+            display: grid;
+            place-content: center;
+            font-size: 50px;
+            color: $white;
+            position: absolute;
+            bottom: 5%;
+            left: -5%;
+            z-index: 1;
+        }
+        &--yellow{
+            background-color: $buff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+        }
+    }
+}
